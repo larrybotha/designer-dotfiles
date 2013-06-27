@@ -44,6 +44,8 @@ If you're more into design, and less into dabbling in code, do the following to 
 ## open Terminal
 ## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool false@
 
+For all the geeks out there - you should look into more fully fledged dotfile configurations. http://mths.be/dotfiles is a great place to start.
+
 h2. Custom Settings
 
 All of the settings in .osx are accompanied by comments to describe what the settings do. 
