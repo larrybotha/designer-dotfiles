@@ -23,7 +23,7 @@ Improvements include:
 * prevent Time Machine from asking to use new drives for backups
 * and many more!
 
-Make sure to read through all the comments in the .osx file to see what options are available, and which you would like to disable or modify.
+Make sure to read through all the comments in the ".osx":https://github.com/larrybotha/designer-dotfiles/blob/master/.osx file to see what options are available, and which you would like to disable or modify.
 
 h2. Usage
 
