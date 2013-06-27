@@ -51,3 +51,13 @@ All of the settings in .osx are accompanied by comments to describe what the set
 A comment is always written with a @#@ in front of it, and will not be run when making updates.
 
 If you would like to change any of the settings, open .osx in Text Edit, and either comment out, delete, or modify the relevant setting. Save and then update with the steps above.
+
+You can rerun the update as many times as you wish if you would like to experiment with your settings.
+
+h3. Disclaimer
+
+Please note that installation of these files should be done at your own discretion. All these settings may be reversed (some may require a little Googling, most can be reversed by replacing a @true@ with a @false@ or vice versa) or modified after an initial configuration. By running a file found in this repo, you accept that I am not in anyway responsible for any damages that may occur to you, your computer, or your pets.
+
+h3. Licence
+
+MIT: http://larrybotha.mit-license.org/
