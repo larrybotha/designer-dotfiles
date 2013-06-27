@@ -1,0 +1,29 @@
+h1. Designer dotfiles
+
+Some simple dotfiles for improving Mac user experience for users who will not generally be on the command line.
+
+Improvements include:
+* allowing text selection when in quick look
+* show remaining battery time
+* speed up some interactions like opening and closing windows / applications
+* always show the expanded save panel
+* always show the expanded print panel
+* close the print dialog once printing is done
+* prevent the irritating "Are you sure message" when opening downloaded files
+* restart automatically if computer freezes
+* check for updates daily
+* trackpad enhancements
+* allow tabbing through options in dialogs
+* allow zooming with ctrl + scroll
+* disable shadow in screenshots
+* show hard drives and external drives on desktop
+* show all filename extensions
+* prevent .DS_Store from being created on network volumes
+* open Finder when an external volume is mounted
+* prevent Time Machine from asking to use new drives for backups
+
+h2. Usage
+
+If you're more into design, and less into dabbling in code, do the following to configure your mac as per the defaults:
+
+# download the .osx file in this repo
