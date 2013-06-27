@@ -2,6 +2,8 @@ h1. Designer dotfiles
 
 Some simple dotfiles for improving Mac user experience for users who will not generally be on the command line.
 
+This file will configure a number of settings all at once, meaning that a fresh install can be quickly configured to what best suits your workflow, without having to manually configure all your settings.
+
 Improvements include:
 * allowing text selection when in quick look
 * show remaining battery time
@@ -10,20 +12,42 @@ Improvements include:
 * always show the expanded print panel
 * close the print dialog once printing is done
 * prevent the irritating "Are you sure message" when opening downloaded files
-* restart automatically if computer freezes
 * check for updates daily
-* trackpad enhancements
 * allow tabbing through options in dialogs
 * allow zooming with ctrl + scroll
 * disable shadow in screenshots
-* show hard drives and external drives on desktop
+* show hard drives and external drives on your desktop
 * show all filename extensions
 * prevent .DS_Store from being created on network volumes
-* open Finder when an external volume is mounted
+* open Finder when an external volumes are mounted
 * prevent Time Machine from asking to use new drives for backups
+* and many more!
+
+Make sure to read through all the comments in the .osx file to see what options are available, and which you would like to disable or modify.
 
 h2. Usage
 
 If you're more into design, and less into dabbling in code, do the following to configure your mac as per the defaults:
 
+# show hidden files on your computer:
+## open Terminal from your Applications folder
+## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool true@
 # download the .osx file in this repo
+# place the file in your home folder (where you find your 'Downloads', 'Documents', and 'Applications' folders
+# in Terminal:
+## type @cd@ then
+## press `enter` to make sure you're in the correct directory
+# type @./.osx@ and press enter to update your settings
+# enter your password
+# wait for confirmation that your settings have been updated
+# to hide the files that we revealed in step 1
+## open Terminal
+## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool false@
+
+h2. Custom Settings
+
+All of the settings in .osx are accompanied by comments to describe what the settings do. 
+
+A comment is always written with a @#@ in front of it, and will not be run when making updates.
+
+If you would like to change any of the settings, open .osx in Text Edit, and either comment out, delete, or modify the relevant setting. Save and then update with the steps above.
