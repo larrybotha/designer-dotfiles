@@ -441,4 +441,10 @@ for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
 	"iCal" "iTunes"; do
 	killall "$app" > /dev/null 2>&1
 done
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo "Done. Note that some of these changes require a logout/restart to take effect. \n\n 
+
+Remember to hide hidden files again if you don't want to see them using: \n
+defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder\n\n
+
+Once you're done, close Terminal and enjoy!
+"
