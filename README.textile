@@ -32,17 +32,20 @@ If you're more into design, and less into dabbling in code, do the following to 
 # show hidden files on your computer:
 ## open Terminal from your Applications folder
 ## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool true@
+## type @killall Finder@ to refresh your Finder with the new setting
+## hidden files are now displayed in your Finder as
 # download the .osx file in this repo
 # place the file in your home folder (where you find your 'Downloads', 'Documents', and 'Applications' folders
 # in Terminal:
 ## type @cd@ then
 ## press `enter` to make sure you're in the correct directory
 # type @./.osx@ and press enter to update your settings
-# enter your password
+# enter your password nd press enter (Terminal will not show that anything is being typed... don't worry, it is!)
 # wait for confirmation that your settings have been updated
 # to hide the files that we revealed in step 1
 ## open Terminal
 ## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool false@
+## type @killall Finder@ to refresh your Finder with the new setting
 
 For all the geeks out there - you should look into more fully fledged dotfile configurations. http://mths.be/dotfiles is a great place to start.
 
