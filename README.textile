@@ -21,6 +21,7 @@ Improvements include:
 * prevent .DS_Store from being created on network volumes
 * open Finder when an external volumes are mounted
 * prevent Time Machine from asking to use new drives for backups
+* reveal your desktop by moving your mouse to the bottom left corner of the screen
 * and many more!
 
 Make sure to read through all the comments in the ".osx":https://github.com/larrybotha/designer-dotfiles/blob/master/.osx file to see what options are available, and which you would like to disable or modify.
@@ -31,8 +32,8 @@ If you're more into design, and less into dabbling in code, do the following to 
 
 # show hidden files on your computer:
 ## open Terminal from your Applications folder
-## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool true@
-## type @killall Finder@ to refresh your Finder with the new setting
+## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder@
+## your Finder and desktop will refresh with the new setting
 ## hidden files are now displayed in your Finder with semi-transparent icons and text
 # download the .osx file from this repo -> https://github.com/larrybotha/designer-dotfiles/archive/master.zip
 # place the file in your home folder (where you find your 'Downloads', 'Documents', and 'Applications' folders
@@ -46,8 +47,9 @@ If you're more into design, and less into dabbling in code, do the following to 
 # wait for confirmation that your settings have been updated
 # to hide the files that we revealed in step 1
 ## open Terminal
-## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool false@
-## type @killall Finder@ to refresh your Finder with the new setting
+## type the following and press enter @defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder@
+## your Finder and desktop will refresh with the new setting
+# close Terminal and enjoy!
 
 For all the geeks out there - you should look into more fully fledged dotfile configurations. http://mths.be/dotfiles is a great place to start.
 
