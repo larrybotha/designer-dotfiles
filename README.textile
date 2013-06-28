@@ -42,7 +42,7 @@ If you're more into design, and less into dabbling in code, do the following to 
 ## type @cd@ then
 ## press `enter` to make sure you're in the correct directory
 # type @./.osx@ and press enter to update your settings
-# enter your password nd press enter (Terminal will not show that anything is being typed... don't worry, it is!)
+# enter your password and press 'enter' (Terminal will not show that anything is being typed... don't worry, it is!)
 # wait for confirmation that your settings have been updated
 # to hide the files that we revealed in step 1
 ## open Terminal
