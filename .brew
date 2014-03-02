@@ -37,6 +37,7 @@ function installcask() {
 	fi
 }
 
+installcask a-better-finder-rename
 installcask alfred
 installcask asepsis
 installcask betterzipql
@@ -45,6 +46,7 @@ installcask google-chrome
 installcask imagealpha
 installcask imageoptim
 installcask iterm2
+installcask openoffice
 installcask quicklook-csv
 installcask quicklook-json
 installcask qlcolorcode
@@ -52,6 +54,7 @@ installcask qlmarkdown
 installcask qlprettypatch
 installcask qlstephen
 installcask screenhero
+installcask sizzlingkeys
 installcask thunderbird
 installcask vlc
 
