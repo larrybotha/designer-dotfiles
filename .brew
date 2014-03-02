@@ -29,6 +29,9 @@ brew install git
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
+# Update brew cask symlink location
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 function installcask() {
 	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
 		brew cask install "${@}"
