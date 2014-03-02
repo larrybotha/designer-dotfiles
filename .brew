@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+# homebrew!
+if ! type "$brew" > /dev/null; then
+  ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
+fi
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install GNU core utilities (those that come with OS X are outdated)
+brew install coreutils
+echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
+# Install Bash 4
+brew install bash
+
+# Install wget with IRI support
+brew install wget --enable-iri
+
+# Install other useful binaries
+brew install git
+
+# Install native apps
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+	if brew cask info "${@}" | grep "Not installed" > /dev/null; then
+		brew cask install "${@}"
+	else
+		echo "${@} is already installed."
+	fi
+}
+
+installcask alfred
+installcask asepsis
+installcask betterzipql
+installcask dropbox
+installcask google-chrome
+installcask imagealpha
+installcask imageoptim
+installcask iterm2
+installcask quicklook-csv
+installcask quicklook-json
+installcask qlcolorcode
+installcask qlmarkdown
+installcask qlprettypatch
+installcask qlstephen
+installcask screenhero
+installcask thunderbird
+installcask vlc
+
+# Remove outdated versions from the cellar
+brew cleanup
