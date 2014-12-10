@@ -58,8 +58,8 @@ installcask qlprettypatch
 installcask qlstephen
 installcask screenhero
 installcask sizzlingkeys
-installcask thunderbird
 installcask the-unarchiver
+installcask thunderbird
 installcask vlc
 
 # Remove outdated versions from the cellar
