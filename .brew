@@ -49,7 +49,7 @@ installcask google-chrome
 installcask imagealpha
 installcask imageoptim
 installcask iterm2
-installcask openoffice
+installcask libreoffice
 installcask quicklook-csv
 installcask quicklook-json
 installcask qlcolorcode
